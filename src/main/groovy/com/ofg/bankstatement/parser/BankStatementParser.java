@@ -1,4 +1,4 @@
-package com.ofg.bank.parser;
+package com.ofg.bankstatement.parser;
 
 import com.google.common.base.Predicate;
 import com.ofg.loans.api.beans.payment.PaymentInfo;

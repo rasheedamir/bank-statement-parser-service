@@ -1,9 +1,9 @@
-package com.ofg.bank.parser.pekao;
+package com.ofg.bankstatement.parser.pekao;
 
 
 import au.com.bytecode.opencsv.CSVReader;
 import com.google.common.base.Preconditions;
-import com.ofg.bank.parser.BankStatementParser;
+import com.ofg.bankstatement.parser.BankStatementParser;
 import com.ofg.loans.api.beans.AddressInfo;
 import com.ofg.loans.api.beans.payment.PaymentInfo;
 import com.ofg.loans.api.beans.payment.PaymentType;

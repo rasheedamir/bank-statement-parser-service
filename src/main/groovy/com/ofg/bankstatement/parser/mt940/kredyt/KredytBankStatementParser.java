@@ -1,4 +1,4 @@
-package com.ofg.bank.parser.mt940.kredyt;
+package com.ofg.bankstatement.parser.mt940.kredyt;
 
 import static com.ofg.loans.pl.db.MiniCreditProductBankAccountsFixture.KREDYT_ACCOUNT;
 import static org.apache.commons.lang.StringUtils.endsWith;
@@ -8,7 +8,7 @@ import static org.apache.commons.lang.StringUtils.startsWith;
 import java.math.BigDecimal;
 import java.util.List;
 
-import com.ofg.bank.parser.mt940.Mt940BankStatementParser;
+import com.ofg.bankstatement.parser.mt940.Mt940BankStatementParser;
 import org.springframework.stereotype.Component;
 
 import com.ofg.loans.api.beans.payment.PaymentInfo;
