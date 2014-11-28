@@ -1,8 +1,6 @@
 package com.ofg.bankparsers.parser;
 
 import com.google.common.annotations.VisibleForTesting;
-import com.ofg.loans.domain.services.BankStatementParser;
-import com.ofg.loans.domain.services.BankStatementParserFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,6 +8,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.Collection;
 
+import static com.google.common.collect.Collections2.filter;
 import static com.google.common.collect.Iterables.getOnlyElement;
 import static com.google.common.collect.Iterables.isEmpty;
 import static com.google.common.collect.Lists.newArrayList;
