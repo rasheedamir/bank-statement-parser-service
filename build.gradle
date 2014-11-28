@@ -32,6 +32,7 @@ ext {
     jacksonMapper = '1.9.13'
     aspectjVersion = '1.8.3'
     microInfraSpringVersion = '0.7.1'
+    loansApiVersion = '1.51.165'
 }
 
 uploadArchives {
@@ -96,6 +97,7 @@ dependencies {
     compile 'org.codehaus.gpars:gpars:1.2.1'
     compile 'net.sf.ehcache:ehcache:2.9.0'
     compile "com.ofg:micro-infra-spring-boot-starter:$microInfraSpringVersion"
+    compile "com.ofg.api.loans:loans-api:$loansApiVersion"
 
     runtime 'cglib:cglib-nodep:3.1'
     runtime 'org.objenesis:objenesis:2.1'
