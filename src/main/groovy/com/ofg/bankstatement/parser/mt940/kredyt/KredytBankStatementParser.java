@@ -9,6 +9,8 @@ import java.math.BigDecimal;
 import java.util.List;
 
 import com.ofg.bankstatement.parser.mt940.Mt940BankStatementParser;
+import com.ofg.bankstatement.parser.mt940.Mt940TransactionType;
+import com.ofg.bankstatement.util.BanksUtils;
 import org.springframework.stereotype.Component;
 
 import com.ofg.loans.api.beans.payment.PaymentInfo;

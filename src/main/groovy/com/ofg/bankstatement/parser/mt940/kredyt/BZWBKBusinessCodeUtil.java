@@ -1,7 +1,7 @@
 package com.ofg.bankstatement.parser.mt940.kredyt;
 
 import com.google.common.collect.ImmutableMap;
-import com.ofg.loans.pl.banks.mt940.Mt940TransactionType;
+import com.ofg.bankstatement.parser.mt940.Mt940TransactionType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

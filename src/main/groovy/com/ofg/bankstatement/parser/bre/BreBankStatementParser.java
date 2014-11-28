@@ -1,5 +1,18 @@
 package com.ofg.bankstatement.parser.bre;
 
+import com.google.common.base.Splitter;
+import com.google.common.collect.Lists;
+import com.ofg.bankstatement.parser.BankStatementParser;
+import com.ofg.bankstatement.util.BanksUtils;
+import com.ofg.bankstatement.util.InputStreamUtils;
+import com.ofg.loans.api.beans.AddressInfo;
+import com.ofg.loans.api.beans.payment.PaymentInfo;
+import com.ofg.loans.api.beans.payment.PaymentType;
+import org.apache.commons.lang.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Component;
+
 import java.io.InputStream;
 import java.math.BigDecimal;
 import java.text.DateFormat;
@@ -8,24 +21,6 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-
-import com.ofg.bankstatement.parser.BankStatementParser;
-import com.ofg.bankstatement.util.InputStreamUtils;
-import org.apache.commons.lang.StringUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.stereotype.Component;
-
-import com.google.common.base.Splitter;
-import com.google.common.collect.Lists;
-import com.ibm.icu.text.DateFormat;
-import com.ibm.icu.text.SimpleDateFormat;
-import com.ofg.loans.api.beans.AddressInfo;
-import com.ofg.loans.api.beans.payment.PaymentInfo;
-import com.ofg.loans.api.beans.payment.PaymentType;
-import com.ofg.loans.domain.services.BankStatementParser;
-import com.ofg.loans.domain.util.InputStreamUtils;
-import com.ofg.loans.pl.banks.BanksUtils;
 
 @Component
 public class BreBankStatementParser implements BankStatementParser {
