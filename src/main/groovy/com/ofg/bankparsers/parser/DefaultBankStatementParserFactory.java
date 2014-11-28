@@ -1,4 +1,4 @@
-package com.ofg.bankparsers;
+package com.ofg.bankparsers.parser;
 
 import com.google.common.annotations.VisibleForTesting;
 import com.ofg.loans.domain.services.BankStatementParser;
