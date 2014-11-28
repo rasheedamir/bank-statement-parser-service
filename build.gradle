@@ -147,7 +147,8 @@ task wrapper(type: Wrapper) {
 
 task generateJavaFromJaxb() {
     ext.jaxbSourceDir = "${projectDir}/src/main/resources"
-    ext.jaxbTargetDir = file("${buildDir}/generated-sources/jaxb")
+    // ext.jaxbTargetDir = file("${buildDir}/generated-sources/jaxb")
+    ext.jaxbTargetDir = file("${jaxbGenSources}")
     doLast {
         jaxbTargetDir.mkdirs()
 
@@ -162,7 +163,7 @@ task generateJavaFromJaxb() {
 
         ant.xjc(
                 destdir: "${jaxbTargetDir}",
-                package: "com.ofg.bankstatement.parserb.getin.statement.day.generated",
+                package: "com.ofg.bankstatement.parser.getin.statement.day.generated",
                 schema: "${jaxbSourceDir}/GetinBank_wyciagi.xsd"
         )
     }

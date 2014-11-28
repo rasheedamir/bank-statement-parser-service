@@ -1,6 +1,5 @@
 package com.ofg.bankstatement.parser.mt940;
 
-import static com.ofg.loans.pl.banks.BanksUtils.*;
 import static org.apache.commons.lang.StringUtils.*;
 
 import java.io.InputStream;
@@ -10,6 +9,8 @@ import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 
+import com.ofg.bankstatement.parser.BankStatementParser;
+import com.ofg.bankstatement.util.BanksUtils;
 import org.apache.commons.lang.StringUtils;
 
 import com.google.common.base.Preconditions;
@@ -17,9 +18,7 @@ import com.ofg.loans.api.beans.AddressInfo;
 import com.ofg.loans.api.beans.payment.PaymentInfo;
 import com.ofg.loans.api.beans.payment.PaymentType;
 import com.ofg.loans.domain.Iban;
-import com.ofg.loans.domain.services.BankStatementParser;
 import com.ofg.loans.domain.util.InputStreamUtils;
-import com.ofg.loans.pl.banks.BanksUtils;
 import com.ofg.loans.util.date.DateTimeUtils;
 
 public abstract class Mt940BankStatementParser implements BankStatementParser {
