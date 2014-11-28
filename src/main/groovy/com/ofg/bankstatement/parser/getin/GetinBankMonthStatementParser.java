@@ -1,29 +1,22 @@
 package com.ofg.bankstatement.parser.getin;
 
+import com.ofg.bankstatement.jaxb.JaxbUnmarshaller;
+import com.ofg.bankstatement.parser.BankStatementParser;
+import com.ofg.bankstatement.util.BanksUtils;
+import com.ofg.loans.api.beans.AddressInfo;
+import com.ofg.loans.api.beans.payment.PaymentInfo;
+import com.ofg.loans.api.beans.payment.PaymentType;
+import org.apache.commons.io.IOUtils;
+import org.apache.commons.lang.StringUtils;
+import org.springframework.stereotype.Component;
+
+import javax.xml.datatype.XMLGregorianCalendar;
 import java.io.IOException;
 import java.io.InputStream;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-
-import javax.xml.datatype.XMLGregorianCalendar;
-
-import com.ofg.bankstatement.parser.BankStatementParser;
-import com.ofg.bankstatement.util.BanksUtils;
-import org.apache.commons.io.IOUtils;
-import org.apache.commons.lang.StringUtils;
-import org.springframework.stereotype.Component;
-
-import com.ofg.loans.api.beans.AddressInfo;
-import com.ofg.loans.api.beans.payment.PaymentInfo;
-import com.ofg.loans.api.beans.payment.PaymentType;
-import com.ofg.loans.domain.services.BankStatementParser;
-import com.ofg.loans.infrastructure.jaxb.JaxbUnmarshaller;
-import com.ofg.loans.pl.banks.BanksUtils;
-import com.ofg.loans.pl.banks.ImmediateIdentificationPaymentInfoModifier;
-import com.ofg.loans.pl.banks.getin.statement.month.generated.Wychagi;
-import com.ofg.loans.pl.banks.getin.statement.month.generated.Wyciag;
 
 @Component
 public class GetinBankMonthStatementParser implements BankStatementParser {
@@ -39,7 +32,7 @@ public class GetinBankMonthStatementParser implements BankStatementParser {
     private static final JaxbUnmarshaller unmarshaller = new JaxbUnmarshaller(Wychagi.class.getPackage().getName());
 
     private static final ImmediateIdentificationPaymentInfoModifier paymentInfoModifier = new ImmediateIdentificationPaymentInfoModifier();
-    
+
     @Override
     public List<PaymentInfo> importBankStatement(InputStream getinBankData) {
         Wychagi getinUnmarshalledBankPayments = null;
