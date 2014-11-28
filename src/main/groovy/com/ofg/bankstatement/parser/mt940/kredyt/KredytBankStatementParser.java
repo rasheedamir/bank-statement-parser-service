@@ -1,19 +1,19 @@
 package com.ofg.bankstatement.parser.mt940.kredyt;
 
-import static org.apache.commons.lang.StringUtils.endsWith;
-import static org.apache.commons.lang.StringUtils.isNotBlank;
-import static org.apache.commons.lang.StringUtils.startsWith;
+        import static org.apache.commons.lang.StringUtils.endsWith;
+        import static org.apache.commons.lang.StringUtils.isNotBlank;
+        import static org.apache.commons.lang.StringUtils.startsWith;
 
-import java.math.BigDecimal;
-import java.util.List;
+        import java.math.BigDecimal;
+        import java.util.List;
 
-import com.ofg.bankstatement.parser.mt940.Mt940BankStatementParser;
-import com.ofg.bankstatement.parser.mt940.Mt940TransactionType;
-import com.ofg.bankstatement.util.BanksUtils;
-import org.springframework.stereotype.Component;
+        import com.ofg.bankstatement.parser.mt940.Mt940BankStatementParser;
+        import com.ofg.bankstatement.parser.mt940.Mt940TransactionType;
+        import com.ofg.bankstatement.util.BanksUtils;
+        import org.springframework.stereotype.Component;
 
-import com.ofg.loans.api.beans.payment.PaymentInfo;
-import com.ofg.loans.api.beans.payment.PaymentType;
+        import com.ofg.loans.api.beans.payment.PaymentInfo;
+        import com.ofg.loans.api.beans.payment.PaymentType;
 
 @Component
 class KredytBankStatementParser extends Mt940BankStatementParser {
