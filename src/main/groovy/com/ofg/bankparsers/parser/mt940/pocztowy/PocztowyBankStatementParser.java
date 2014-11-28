@@ -6,6 +6,7 @@ import java.math.BigDecimal;
 import java.util.List;
 import javax.annotation.CheckForNull;
 
+import com.ofg.bankparsers.parser.mt940.Mt940BankStatementParserDelegate;
 import org.springframework.stereotype.Component;
 
 import com.ofg.loans.api.beans.payment.PaymentInfo;

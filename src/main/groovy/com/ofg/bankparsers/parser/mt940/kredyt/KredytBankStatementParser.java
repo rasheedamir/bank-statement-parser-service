@@ -8,6 +8,7 @@ import static org.apache.commons.lang.StringUtils.startsWith;
 import java.math.BigDecimal;
 import java.util.List;
 
+import com.ofg.bankparsers.parser.mt940.Mt940BankStatementParser;
 import org.springframework.stereotype.Component;
 
 import com.ofg.loans.api.beans.payment.PaymentInfo;
