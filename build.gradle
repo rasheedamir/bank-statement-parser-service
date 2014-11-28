@@ -75,6 +75,10 @@ applicationDefaultJvmArgs << "-noverify"
 repositories {
     mavenLocal()
     jcenter()
+    maven {
+        name 'public4finance'
+        url "http://nexus.4finance.net/content/groups/public/"
+    }
 }
 
 dependencies {
