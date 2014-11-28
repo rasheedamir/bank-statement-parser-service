@@ -1,4 +1,4 @@
-package com.ofg.bankparsers.parser.bre;
+package com.ofg.bank.parser.bre;
 
 import java.io.InputStream;
 import java.math.BigDecimal;
@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import com.ofg.bankparsers.parser.BankStatementParser;
+import com.ofg.bank.parser.BankStatementParser;
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

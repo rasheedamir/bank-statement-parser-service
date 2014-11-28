@@ -1,10 +1,10 @@
-package com.ofg.bankparsers.parser.mt940.ing;
+package com.ofg.bank.parser.mt940.ing;
 
 import static com.ofg.loans.pl.banks.BanksUtils.*;
 
 import java.util.List;
 
-import com.ofg.bankparsers.parser.mt940.Mt940BankStatementParser;
+import com.ofg.bank.parser.mt940.Mt940BankStatementParser;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.stereotype.Component;
 

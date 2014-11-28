@@ -1,4 +1,4 @@
-package com.ofg.bankparsers.parser.pkobp;
+package com.ofg.bank.parser.pkobp;
 
 import static org.apache.commons.lang.StringUtils.*;
 
@@ -9,7 +9,7 @@ import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
 
-import com.ofg.bankparsers.parser.BankStatementParser;
+import com.ofg.bank.parser.BankStatementParser;
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

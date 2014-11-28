@@ -1,4 +1,4 @@
-package com.ofg.bankparsers.parser.mt940;
+package com.ofg.bank.parser.mt940;
 
 import static com.ofg.loans.pl.banks.BanksUtils.*;
 import static org.apache.commons.lang.StringUtils.*;

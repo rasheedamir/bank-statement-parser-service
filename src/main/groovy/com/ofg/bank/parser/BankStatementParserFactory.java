@@ -1,6 +1,4 @@
-package com.ofg.bankparsers.parser;
-
-import com.ofg.bankparsers.parser.BankStatementParser;
+package com.ofg.bank.parser;
 
 public interface BankStatementParserFactory {
 

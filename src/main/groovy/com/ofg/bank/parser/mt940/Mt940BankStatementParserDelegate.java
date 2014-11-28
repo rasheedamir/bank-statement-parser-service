@@ -1,4 +1,4 @@
-package com.ofg.bankparsers.parser.mt940;
+package com.ofg.bank.parser.mt940;
 
 import com.google.common.base.Predicate;
 

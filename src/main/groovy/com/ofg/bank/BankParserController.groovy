@@ -1,4 +1,4 @@
-package com.ofg.bankparsers
+package com.ofg.bank
 
 import groovy.util.logging.Slf4j
 import org.springframework.web.bind.annotation.RequestMapping

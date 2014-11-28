@@ -1,4 +1,4 @@
-package com.ofg.bankparsers.parser.getin;
+package com.ofg.bank.parser.getin;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -9,7 +9,7 @@ import java.util.List;
 
 import javax.xml.datatype.XMLGregorianCalendar;
 
-import com.ofg.bankparsers.parser.BankStatementParser;
+import com.ofg.bank.parser.BankStatementParser;
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.stereotype.Component;

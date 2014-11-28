@@ -1,4 +1,4 @@
-package com.ofg.bankparsers.parser.mt940.kredyt;
+package com.ofg.bank.parser.mt940.kredyt;
 
 import com.google.common.collect.ImmutableMap;
 import com.ofg.loans.pl.banks.mt940.Mt940TransactionType;

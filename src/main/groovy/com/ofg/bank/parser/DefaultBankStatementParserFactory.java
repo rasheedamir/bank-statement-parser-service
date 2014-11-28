@@ -1,4 +1,4 @@
-package com.ofg.bankparsers.parser;
+package com.ofg.bank.parser;
 
 import com.google.common.annotations.VisibleForTesting;
 import org.slf4j.Logger;
