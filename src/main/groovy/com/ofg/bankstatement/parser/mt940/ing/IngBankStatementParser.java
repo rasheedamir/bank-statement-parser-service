@@ -11,8 +11,7 @@ import org.springframework.stereotype.Component;
 
 import com.ofg.loans.api.beans.AddressInfo;
 import com.ofg.loans.api.beans.payment.PaymentInfo;
-import com.ofg.loans.pl.banks.BanksUtils;
-import com.ofg.loans.pl.banks.mt940.Mt940BankStatementParser;
+import static com.ofg.bankstatement.util.BanksUtils.*;
 
 @Component
 class IngBankStatementParser extends Mt940BankStatementParser {

@@ -1,6 +1,5 @@
 package com.ofg.bankstatement.parser.mt940.kredyt;
 
-import static com.ofg.loans.pl.db.MiniCreditProductBankAccountsFixture.KREDYT_ACCOUNT;
 import static org.apache.commons.lang.StringUtils.endsWith;
 import static org.apache.commons.lang.StringUtils.isNotBlank;
 import static org.apache.commons.lang.StringUtils.startsWith;
@@ -15,9 +14,6 @@ import org.springframework.stereotype.Component;
 
 import com.ofg.loans.api.beans.payment.PaymentInfo;
 import com.ofg.loans.api.beans.payment.PaymentType;
-import com.ofg.loans.pl.banks.BanksUtils;
-import com.ofg.loans.pl.banks.mt940.Mt940BankStatementParser;
-import com.ofg.loans.pl.banks.mt940.Mt940TransactionType;
 
 @Component
 class KredytBankStatementParser extends Mt940BankStatementParser {

@@ -10,8 +10,7 @@ import com.ofg.bankstatement.parser.mt940.Mt940BankStatementParserDelegate;
 import org.springframework.stereotype.Component;
 
 import com.ofg.loans.api.beans.payment.PaymentInfo;
-import com.ofg.loans.pl.banks.mt940.Mt940BankStatementParserDelegate;
-import com.ofg.loans.pl.db.MiniCreditProductBankAccountsFixture;
+import static com.ofg.bankstatement.util.BanksUtils.*;
 
 @Component
 class PocztowyBankStatementParser extends Mt940BankStatementParserDelegate {

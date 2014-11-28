@@ -1,6 +1,5 @@
 package com.ofg.bankstatement.parser.mt940.millenium;
 
-import static com.ofg.loans.pl.banks.BanksUtils.*;
 import static org.apache.commons.lang.StringUtils.*;
 
 import java.util.List;
@@ -12,8 +11,7 @@ import org.springframework.stereotype.Component;
 
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Lists;
-import com.ofg.loans.pl.banks.BanksUtils;
-import com.ofg.loans.pl.banks.mt940.Mt940BankStatementParser;
+import static com.ofg.bankstatement.util.BanksUtils.*;
 
 @Component
 class MilleniumBankStatementParser extends Mt940BankStatementParser {
