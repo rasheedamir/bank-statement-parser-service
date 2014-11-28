@@ -121,6 +121,7 @@ dependencies {
     compile "com.ofg:micro-infra-spring-boot-starter:$microInfraSpringVersion"
     compile "com.ofg.api.loans:loans-api:$loansApiVersion"
     compile "com.google.code.findbugs:jsr305:2.0.1"
+    compile 'net.sf.opencsv:opencsv:2.3'
     jaxb "com.sun.xml.bind:jaxb-xjc:2.2.4-1"
 
     runtime 'cglib:cglib-nodep:3.1'
