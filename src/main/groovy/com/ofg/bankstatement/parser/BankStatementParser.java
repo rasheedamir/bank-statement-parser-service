@@ -1,11 +1,11 @@
 package com.ofg.bankstatement.parser;
 
-import com.google.common.base.Predicate;
 import com.ofg.loans.api.beans.payment.PaymentInfo;
 
 import javax.validation.constraints.NotNull;
 import java.io.InputStream;
 import java.util.List;
+import java.util.function.Predicate;
 
 public interface BankStatementParser {
 
