@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import javax.xml.datatype.XMLGregorianCalendar;
-import com.ofg.bankstatement.jaxb.JaxbUnmarshaller;
+import com.ofg.bankstatement.infrastruture.jaxb.JaxbUnmarshaller;
 
 import com.ofg.bankstatement.parser.BankStatementParser;
 import com.ofg.bankstatement.util.BanksUtils;

@@ -1,4 +1,4 @@
-package com.ofg.bankstatement.jaxb;
+package com.ofg.bankstatement.infrastruture.jaxb;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;

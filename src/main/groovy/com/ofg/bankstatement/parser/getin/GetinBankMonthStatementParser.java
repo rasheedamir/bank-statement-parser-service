@@ -1,6 +1,6 @@
 package com.ofg.bankstatement.parser.getin;
 
-import com.ofg.bankstatement.jaxb.JaxbUnmarshaller;
+import com.ofg.bankstatement.infrastruture.jaxb.JaxbUnmarshaller;
 import com.ofg.bankstatement.parser.BankStatementParser;
 import com.ofg.bankstatement.util.BanksUtils;
 import com.ofg.loans.api.beans.AddressInfo;
