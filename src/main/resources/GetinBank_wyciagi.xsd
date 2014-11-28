@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified"
+    elementFormDefault="qualified" version="1.0"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="OPERACJE" type="Operacje"/>
+
+    <xs:complexType name="Operacje">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="OPERACJA">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="ORD" type="xs:string" />
+                        <xs:element name="ID_TRANSAKCJI" type="xs:string" />
+                        <xs:element name="ID_AN_DEF" type="xs:string" />
+                        <xs:element name="DATA_WALUTY" type="xs:date" />
+                        <xs:element name="TRESC1" type="xs:string" />
+                        <xs:element name="TRESC2" type="xs:string" />
+                        <xs:element name="TRESC3" type="xs:string" />
+                        <xs:element name="TRESC4" type="xs:string" />
+                        <xs:element name="KWOTA" type="xs:string" />
+                        <xs:element name="WALUTA" type="xs:string" />
+                        <xs:element name="NAZWA1" type="xs:string" />
+                        <xs:element name="NAZWA2" type="xs:string" />
+                        <xs:element name="NAZWA3" type="xs:string" />
+                        <xs:element name="NAZWA4" type="xs:string" />
+                        <xs:element name="STRONA" type="xs:string" />
+                        <xs:element name="RACHUNEK" type="xs:string" />
+                        <xs:element name="BANK" type="xs:string" />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="num" use="optional" type="xs:string" />
+    </xs:complexType>
+</xs:schema>

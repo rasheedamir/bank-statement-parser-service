@@ -1,6 +1,5 @@
 package com.ofg.bankstatement.parser.mt940.pocztowy;
 
-import static com.ofg.loans.pl.banks.BanksUtils.*;
 
 import java.math.BigDecimal;
 import java.util.List;

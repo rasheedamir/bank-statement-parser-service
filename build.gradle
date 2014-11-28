@@ -46,6 +46,24 @@ uploadArchives {
     }
 }
 
+ext.generatedSources = "${buildDir}/generated-sources"
+ext.jaxbGenSources = "${generatedSources}/jaxb"
+
+configurations {
+    jaxb
+}
+
+sourceSets {
+    jaxb {
+        java {
+            srcDirs += "${jaxbGenSources}"
+        }
+    }
+}
+
+compileJava.source sourceSets.jaxb.allJava
+
+
 // Make sure that fat jar is built before uploading
 uploadArchives.dependsOn build
 
@@ -103,6 +121,7 @@ dependencies {
     compile "com.ofg:micro-infra-spring-boot-starter:$microInfraSpringVersion"
     compile "com.ofg.api.loans:loans-api:$loansApiVersion"
     compile "com.google.code.findbugs:jsr305:2.0.1"
+    jaxb "com.sun.xml.bind:jaxb-xjc:2.2.4-1"
 
     runtime 'cglib:cglib-nodep:3.1'
     runtime 'org.objenesis:objenesis:2.1'
@@ -124,6 +143,31 @@ dependencies {
 task wrapper(type: Wrapper) {
     gradleVersion = '2.1'
 }
+
+task generateJavaFromJaxb() {
+    ext.jaxbSourceDir = "${projectDir}/src/main/resources"
+    ext.jaxbTargetDir = file("${buildDir}/generated-sources/jaxb")
+    doLast {
+        jaxbTargetDir.mkdirs()
+
+        ant.taskdef(name: 'xjc', classname: 'com.sun.tools.xjc.XJCTask', classpath: configurations.jaxb.asPath)
+        ant.jaxbTargetDir = jaxbTargetDir
+
+        ant.xjc(
+                destdir: "${jaxbTargetDir}",
+                package: "com.ofg.bankstatement.parser.getin.statement.month.generated",
+                schema: "${jaxbSourceDir}/GetinBank_mt940.xsd"
+        )
+
+        ant.xjc(
+                destdir: "${jaxbTargetDir}",
+                package: "com.ofg.bankstatement.parserb.getin.statement.day.generated",
+                schema: "${jaxbSourceDir}/GetinBank_wyciagi.xsd"
+        )
+    }
+}
+
+compileJava.dependsOn generateJavaFromJaxb
 
 if(project.hasProperty("coverage")) {
     apply plugin: 'codenarc'
