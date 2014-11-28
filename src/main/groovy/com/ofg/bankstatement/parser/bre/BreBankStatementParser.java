@@ -2,12 +2,15 @@ package com.ofg.bankstatement.parser.bre;
 
 import java.io.InputStream;
 import java.math.BigDecimal;
+import java.text.DateFormat;
 import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
 import com.ofg.bankstatement.parser.BankStatementParser;
+import com.ofg.bankstatement.util.InputStreamUtils;
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
